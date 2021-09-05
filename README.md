@@ -1,0 +1,10 @@
+## References
+- [Download VS Code](https://code.visualstudio.com/)
+- [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [Font awesome download](https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
+- [w3schools](https://www.w3schools.com/)
+- [In-depth web dev](https://developer.mozilla.org/en-US/)
+- [Learn JavaScript (JS)](https://javascript.info/)
+- [Check if HTML, CSS features are supported on browsers](https://caniuse.com/)
+- [Twitter Bootstrap](https://getbootstrap.com/)
+- [Trello](https://trello.com/)

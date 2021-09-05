@@ -1,0 +1,147 @@
+html {
+    background-color: rgb( 0, 121, 191 );
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em 1em;
+    background-color: rgb( 0, 103, 163 );
+}
+
+.navigation-menu ul {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid transparent;
+}
+
+.navigation-menu .main-items a {
+    padding: 0.5em;
+    border-radius: 3px;
+    margin-right: 0.25em;
+    color: white;
+    text-decoration: none;
+    background-color: rgb( 255, 255, 255, 0 );
+}
+
+.navigation-menu .main-items a:hover {
+    background-color: rgb( 255, 255, 255, 0.5 );
+}
+
+.btn {
+    padding: 0.5em;
+    border: 0;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9em;
+    opacity: 0.85;
+}
+
+.btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: rgb( 88, 170, 66 );
+}
+
+.btn-secondary {
+    background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+main {
+    padding: 1em;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.25em 0;
+    color: white;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-left: 0.5em;
+    margin: 0.25em 0;
+}
+
+.task-lists {
+    display: flex;
+    align-items: flex-start;
+    overflow: auto;
+    height: calc( 100vh - 6em );
+}
+
+.task-list {
+    position: relative;
+    flex-basis: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0.3em;
+    margin-right: 1em;
+    border-radius: 4px;
+    background-color: rgb( 236, 236, 236 );
+    animation: slide-down 1s;
+}
+
+.task {
+    padding: 0.5em;
+    margin: 0.75em 0.5em;
+    background-color: white;
+    cursor: pointer;
+    animation: fade-in 2s;
+}
+
+.task:hover {
+    opacity: 1;
+}
+
+.actions {
+    margin: 0.4em 0;
+}
+
+.action {
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.actions .fas,
+.actions .far {
+    color: lightgray;
+}
+
+@media ( max-width : 540px ) {
+    .navigation-menu .main-items {
+        display: none;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        top: -500px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
